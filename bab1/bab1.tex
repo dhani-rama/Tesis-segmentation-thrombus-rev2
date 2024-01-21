@@ -1,0 +1,54 @@
+
+\begin{spacing}{1.2}
+  \chapter{PENDAHULUAN}
+\end{spacing}
+
+
+\pagenumbering{arabic}
+\vspace{4ex}
+
+\section{Latar Belakang}
+\textit{Deep Vein Thrombosis} (DVT) merupakan sebuah penyakit yang diakibatkan adanya pembentukan gumpalan darah (\textit{thrombus}) pada pembuluh darah vena dalam. Gumpalan darah tersebut dapat menimbulkan penyumbatan pada pembuluh darah di paru – paru sehingga berpotensi menyebabkan kondisi yang serius sepeti \textit{Pulmonory Embolism} (PE)\cite{arta1}. Penanganan medis pada kasus DVT secara konvensional dilakukan dengan cara penyedotan thrombus yang terdeteksi dalam pembuluh darah vena. Kegiatan penyedotan tersebut biasa disebut dengan aspirasi.
+
+Pemantauan proses aspirasi menggunakan angiografi berbasis X-Ray. Pemantauan ini dilakukan sebelum operasi dan sesudah operasi. Angiografi berbasis X-Ray beresiko menimbulkan paparan radiasi kepada pasien maupun tenaga medis. Angiografi hanya dapat menampilkan citra 2D sehingga objek yang berbentuk volume tidak dapat divisualkan\cite{made2020}. Modalitas \textit{ultrasound} (USG) diusulkan karena USG tidak memiliki resiko penyebaran paparan radiasi jika dibandingkan dengan modalitas yang digunakan sekarang yaitu X-Ray. Selain itu, proses pencitraan modalitas menggunakan USG memungkinkan untuk mendapatkan citra 2D.
+
+Kelemahan pencitraan DVT menggunakan modalitas USG yaitu citra yang dihasilkan dari proses pencitraan USG cenderung sulit untuk dianalisis dan memiliki banyak noise. Perbedaan citra hasil pencitraan USG bisa mempengaruhi proses diagnosis dokter sehingga memungkinkan terjadinya kesalahan dalam memberikan informasi letak posisi gumpalan darah. Oleh karena itu, perlu adanya pengolahan citra hasil pencitraan menggunakan USG agar dapat divisualisasikan guna mengetahui informasi – informasi penting yang terkait dengan kasus DVT seperti volume dari pembuluh darah vena ataupun gumpalan darah.
+
+Metode deteksi gumpalan darah konvensional biasanya mengadopsi algoritma pemrosesan gambar, seperti peningkatan kualitas citra gambar, segmentasi, dan pengklasifikasian. Namun, untuk mendapatkan hasil yang akurat, metode – metode konvensional ini masih memerlukan peningkatan yang lebih kompleks. Belakangan ini, metode \textit{deep learning} telah diperkenalkan untuk analisis gambar medis untuk berbagai masalah dengan mendapatkan hasil dengan akurasi yang sangat baik. \textit{Convolutional Neural Network} (CNN) telah menarik perhatian banyak peneliti saat ini [3]. Dikarenakan model CNN dapat dilatih dan dibelajari fitur – fitur sesuai dengan keinginan peneliti.
+
+Penelitian yang telah dilakukan oleh Sunarya, dkk (2020)\cite{made2020} menitikberatkan pada pengembangan visualisasi rekonstruksi citra 3D pembuluh darah arteri karotis yang berasal dari citra \textit{B-Mode ultrasound}. Segmentasi pada penelitian ini masih menggunakan pendekatan \textit{matching template features}. Adapun kekurangan dari metode \textit{matching ellipses features} adalah citra yang dihasilkan hanya sebatas \textit{binary semantic segmentation} serta hasil ekstraksi tepi (outer) pembuluh darah tidak berdasarkan bentuk yang sesungguhnya.
+
+Penelitian yang telah dilakukan oleh Hernanda, dkk (2022)\cite{arta1} memperbaiki kekurangan yang ada pada penelitian Sunarya (2020)\cite{made2020} berhasil mendapatkan hasil ekstraksi tepi (\textit{outer}) yang sesuai dengan bentuk pembuluh darah sesungguhnya dari hasil segmentasi citra 2D menggunakan model U-Net. Penelitian ini juga dapat memvisualisasikan rekonstruksi 3D dari hasil segmentasi \textit{semantic} citra 2D uSG pembuluh darah vena menggunakan model \textit{deep learning} U-Net. Namun kekurangan dari penelitian ini adalah hanya sebatas \textit{binary class segmentation} sehingga belum dapat membedakan mana yang termasuk pembuluh darah ataupun gumpalan darah. Dari kekurangan tersebut, maka perlu adanya pengembangan metode untuk \textit{multiclass segmentation} yang lebih efisien guna mendapatkan area gumpalan darah vena secara akurat. Oleh karena itu pada penelitian ini akan dilakukan segmentasi dari citra 2D gumpalan darah pada pembulah darah vena menggunakan arsitektur \textit{deep learning} U-Net. Proses segmentasi gumpalan darah (\textit{thrombus}) menggunakan model U-Net sudah dilakukan oleh Mojtahedi (2022) \cite{mojtahedi2022fully} untuk mencari area dari \textit{thrombus} pada arteri selebral arterior pada penderita \textit{stroke}. Namun pada penelitian ini masih belum optimal karena jumlah data \textit{training} hanya 208 citra serta kurangnya variasi data yang digunakan.
+
+
+
+% Sebagian besar implementasi model CNN pada deteksi terkait darah hanya terbatas pada model 2D CNN. Namun 2D CNN tidak dapat diimplementasikan pada dataset 3D. Beberapa jenis model 2D CNN mencoba untuk memperkenalkan sudut pandang multi tampilan atau fitur 3D yang dikembangkan secara manual. Namun, jenis – jenis CNN 2D ini masih belum sepenuhnya menggali informasi spasial 3D dalam data volumetric. Berbagai jenis CNN 3D diusulkan untuk mengatasi kekurangan dari model CNN 2D.
+
+% Di dalam reduksi False Positive (FP), sangat sedikit model 2D CNN yang sudah diadaptasikan karena memiliki keterbatasan dalam keefektifan dalam membedakan fitur - fitur yang relevan. Oleh karena itu, model 3D CNN secara umum digunakan dalam permasalahan pereduksian FP\cite{reductionBab1Khan}.
+
+
+  
+% Penelitian sebelumnya yang telah dilakukan oleh Hernanda et al (2023) telah berhasil mengembangkan sebuah visualisasi rekonstruksi citra 3D pembuluh darah vena dari citra USG. Metode yang digunakan dalam proses segmentasi yaitu arsitektur deep learning U-Net. 
+
+% Oleh karena itu pada penelitian ini akan dilakukan segmentasi dari citra 2D gumpalan darah pada pembulah darah vena menggunakan arsitektur \textit{deep learning} V-Net.
+
+\section{Rumusan Masalah}
+Berdasarkan latar belakang yang dijelaskan sebelumnya, maka dapat dirumuskan permasalahan yaitu sistem segmentasi peredaran darah manusia pada penelitian sebelumnya belum dapat membedakan mana yang termasuk bentuk gumpalan darah. 
+\section{Tujuan}
+Tujuan dari penelitian ini adalah untuk melakukan segmentasi 2D dan 3D gumpalan darah pada pembuluh darah vena dengan menggunakan citra 2D dan 3D \textit{ultrasound.} Sistem segmentasi gumpalan darah ini nantinya sebagai dasar untuk perhitungan volumetric gumpalan darah.
+
+%\cite{Koza1996}
+%\begin{enumerate}
+%	\item Tujuan Pertama
+%	\item Tujuan Kedua
+%\end{enumerate}
+%\section{Batasan Masalah}
+%Tutorial ini dibatasi pada penggunaan Latex untuk penulisan tesis. 
+\section{Manfaat}
+Manfaat yang diperoleh dari penelitian ini mengembangkan sistem segmentasi gumpalan darah pada pembuluh darah vena dari citra 2D dan 3D USG. Dengan adanya segmentasi 2D dan 3D gumpalan darah pada pembuluh darah vena dapat menjadi dasar pengembangan selanjutnya perhitungan volumetric gumpalan darah. 
+%\subtem section{Contoh Subseksi }
+%\subsubsection{Contoh SubSub Seksi}
+%
+%\begin{equation}
+%y=cos(\alpha x)
+%\end{equation}

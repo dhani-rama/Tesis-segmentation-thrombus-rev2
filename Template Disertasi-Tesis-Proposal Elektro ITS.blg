@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Template Disertasi-Tesis-Proposal Elektro ITS.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: IEEEabrv.bib
+Database file #2: ./ubah/pustaka.bib
+Warning--I didn't find a database entry for "Gustiara2022"
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 19 entries,
+            4087 wiz_defined-function locations,
+            1458 strings with 22294 characters,
+and the built_in function-call counts, 14214 in all, are:
+= -- 1082
+> -- 403
+< -- 99
++ -- 214
+- -- 77
+* -- 681
+:= -- 2079
+add.period$ -- 40
+call.type$ -- 19
+change.case$ -- 21
+chr.to.int$ -- 231
+cite$ -- 19
+duplicate$ -- 1028
+empty$ -- 1190
+format.name$ -- 94
+if$ -- 3331
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 194
+newline$ -- 88
+num.names$ -- 19
+pop$ -- 502
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1089
+stack$ -- 0
+substring$ -- 563
+swap$ -- 802
+text.length$ -- 22
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 19
+warning$ -- 0
+while$ -- 57
+width$ -- 21
+write$ -- 203
+(There was 1 warning)

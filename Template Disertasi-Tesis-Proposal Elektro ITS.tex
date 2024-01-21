@@ -1,0 +1,154 @@
+%*********************************
+%Format telah disesuaikan sesuai *
+%Panduan penulisan               *
+%Disertasi Dan Tesis ITS         *
+%*********************************
+ \documentclass[12pt, a4paper,twoside, bahasa]{report}
+ 
+%\documentclass[12pt, a4paper,twoside]{report}
+
+\title{Buku Tesis}
+% Jika pakai windows untuk run
+%    pertama kali dan error.
+% Mohon cek miktex console jika 
+%    compiler latex nya menggunakan miktex.
+%------------------------------
+\input{./lib/init.tex}
+
+
+
+%************************************
+% 1. JENIS BUKU
+%    Pilih Salah Satu 
+%************************************
+%     \ProposalDisertasi
+%     \ProposalTesis 
+     \Tesis{Magister Teknik (MT)}
+%\Disertasi{Doktor (Dr)}
+%***************************
+
+%\ProposalDisertasi
+%\ProposalTesis 
+%\Tesis{Magister Teknik (MT)}
+%\Disertasi{Doktor (Dr)}
+
+
+%*******************************
+%2.  Tulislah Kode Yang Sesuai 
+%*******************************
+%\Kode{DISERTASI - EE186601}
+\Kode{TESIS - EE235401}
+%\Kode{Proposal Tesis}
+%\Kode{Proposal Disertasi}
+%*******************************
+
+%*******************************
+%  3. Judul Proposal, Tesis atau 
+%     Disertasi 
+%     dipilih Salah Satu 
+%-------------------------------
+% Tulislah Judul Dalam Bahasa Indonesia
+\Judul{SEGMENTASI GUMPALAN DARAH VENA PADA CITRA ULTRASOUND MENGGUNAKAN U-NET}
+% Tulislah Judul Dalam Bahasa Inggris
+\JudulEng{THROMBUS SEGMENTATION IN ULTRASOUND IMAGE USING U-NET}
+%************************************
+% 4. Identitas Mahasiswa
+% Format :\Mahasiswa{Nama}{Nrp}
+%------------------------------------
+\Mahasiswa{Ahmad Ramadhani}{6022221001}
+%************************************
+% 5. Waktu Dan Ruang Ujian
+%------------------------------------
+%Tanggal Ujian 
+\TanggalUjian{11 Januari 2024}
+% Perioda wisuda  
+\PeriodeWisuda{-} 
+%Hari ujian dan Tempat Ujian 
+\HariUjian{Kamis}
+\TempatUjian{Ruang B211}
+
+
+%************************************
+%6. Identitas Pembimbing 
+%   Maximal Tiga Pembimbing
+%   Format : \PembimbingXXX{Nama}{Nip}
+%-----------------------------------
+%\scalebox{.95}[1.0]{xxx}
+\PembimbingSatu{Prof. Dr. I Ketut Eddy Purnama, S.T., M.T.}{196907301995121001}
+\PembimbingDua{Dr. Eko Mulyanto Yuniarno, S.T., M.T.}{196806011995121009}
+%\PembimbingTiga{Dr. Eko Mulyanto Yuniarno,ST. MT.}{132135221}
+
+%************************************
+% 7. Identitas Penguji 
+%     Maximal 4 penguji
+%     Format : \PengujiXXX{Nama}{Nip}
+%-------------------------
+\PengujiSatu{Dr. Arief Kurniawan, S.T., M.T.}{197409072002121001}
+\PengujiDua{Dr. Eko Mulyanto Yuniarno, S.T., M.T.}{196806011995121009}
+\PengujiTiga{Dr. Supeno Mardi Susiki Nugroho, S.T., M.T.}{197003131995121001}
+% \PengujiTiga{Dr. I Ketut Eddy Purnama, S.T., M.T.}{196907301995121001}
+% \PengujiEmpat{Dr. Eko Mulyanto Yuniarno, S.T., M.T.}{196806011995121009}
+%\PengujiTiga{Dr.Eko Mulyanto Yuniarno}{196806011995121009}
+%\PengujiEmpat{Dr.Eko Mulyanto Yuniarno}{132135221}
+
+%************************************
+% 8. Identitas Fakultas ------------------------------------
+\Fakultas{Fakultas Teknologi Elektro Dan Informatika Cerdas}
+\BeltFakultas{BeltFte}
+%************************************
+% 9. Identitas Departement
+%-----------------------------------
+\Departemen{Teknik Elektro}
+
+\KaDep{Dedet Candra Riawan, ST., M.Eng., Ph.D}{197311192000031001}
+%***********************************
+% 10. Footer Identitas Program Studi 
+%  Pada Cover
+%----------------------------------
+\CoverFooter{\normalsize
+PROGRAM MAGISTER\\
+	DEPARTEMEN TEKNIK ELEKTRO\\
+	FAKULTAS TEKNOLOGI ELEKTRO DAN INFORMATIKA CERDAS\\
+	INSTITUT TEKNOLOGI SEPULUH NOPEMBER\\
+	SURABAYA\\
+	2024}
+
+%**********************************
+%File Penting Yang Dapat di Edit:
+%**********************************
+%Abstrak :
+%        ->\ubah\abstrak.tex
+%Abstrak Bhs Inggris :
+%        ->\ubah\abstrakEng.tex
+%Kata Penggantar :
+%        ->\ubah\pengantar.tex 
+%Nomenklatur :
+%        ->\ubah\Nomenklatur.tex
+%Database Daftar Pustaka
+%        ->\ubah\pustaka.bib
+%DaftarRiwayatHidup 
+%        ->\ubah\DaftarRiwayatHidup.tex
+%----------------------------------
+%**********************************
+%Dokumen Utama
+%----------------------------------
+\begin{document}
+\input{./lib/TataLetak.tex}
+\begin{spacing}{1.5}
+	\input{./bab1/bab1}
+	\cleardoublepage
+	\input{./bab2/bab2}
+	\cleardoublepage
+	\input{./bab3/bab3}
+	\cleardoublepage
+	\input{./bab4/bab4}
+	\cleardoublepage
+	\input{./bab5/bab5}
+	\cleardoublepage
+	%Bab Lain bisa ditambah disini
+\end{spacing}
+\DaftarPustaka
+%Daftar Riwayat Hidup
+%    ->\ubah\DaftarRiwayatHidup.tex
+\DaftarRiwayatHidup
+\end{document}

@@ -1,0 +1,25 @@
+\chapter{PENUTUP}
+\label{sec:chap5_tutup}
+\vspace{1ex}
+\section*{}
+ \vspace{1ex}
+
+\section{Kesimpulan}
+\label{sec:sec4_kesimpulan}
+\vspace{1ex}
+Segmentasi gumpalan darah vena pada citra \textit{ultrasound} menggunakan U-Net mempunyai input berupa citra \textit{ultrasound} gumpalan darah (\textit{thrombus}) dan pembuluh darah dan output berupa visualisasi hasil segmentasi2D dan 3D. Pengujian dala penelitian ini terbagi menjadi 2 yaitu pengujian pada segmentasi 2D dan 3D. Berdasarkan hasil pembahasan dapat disimpulkan bahwa penggunaan \textit{encoder} \textit{pre-trained} VGG16 pada model U-Net pada segmentasi 2D dapat meningkatkan kinerja model untuk segmentasi area \textit{thrombus}. Dari hasil perbandingan segmentasi dari 2 model tersebut, model \textit{pre-trained} VGG16 dan U-Net memiliki kualitas nilai validasi yang tinggi dibandingkan dengan model U-Net standar dengan nilai \textit{mean} IoU sebesar 88,298\%, nilai \textit{mean dice coefficient} sebesar 0,8784 dan nilai \textit{mean} \textit{hausdorff distance} sebesar 3,07.  Penerapan peningkatan kualitas citra dengan filter gaussian dan filter median memberikan pengaruh dalam peningkatan performa segmentasi 2D. Pada segmentasi 3D, model U-Net 3D mampu melakukan segmentasi area mana yang termasuk \textit{thrombus} dan mana bagian yang bukan area \textit{thrombus} secara baik dengan memperoleh nilai akurasi sebesar 99,1078\%, nilai \textit{loss} sebesar 0,0208, nilai \textit{mean} IoU sebesar 0,8105, dan nilai mean \textit{dice coefficient} sebesar 0,8953, dan \textit{mean} \textit{hausdorff distance} sebesar 3,25. Berdasarkan hal tersebut metode segmentasi U-Net 3D dapat digunakan untuk segmentasi area \textit{thrombus} pada pembuluh darah vena pada citra \textit{ultrasound} dan memvisualisasikannnya dalam ruang tiga dimensi.
+
+%Berdasarkan hasil penelitian yang telah dilakukan, dapat ditarik beberapa kesimpulan sebagai berikut:
+%
+%
+%\begin{enumerate}
+%	\item Berdasarkan hasil pengujian performa model U-Net dan VGG16-UNet untuk segmentasi 2D area \textit{thrombus}, filter \textit{gaussian} menunjukkan performa yang sangat baik dari pada filter \textit{denoising} yang lain dalam berbagai aspek pengujian dimana mencerminkan kemampuannya dalam meningkatkan kualitas segmentasi \textit{thrombus}.
+%	\item Penggunaan \textit{encoder} VGG16 pada arsitektur UNet dapat meningkatkan kinerja model untuk segmentasi area \textit{thrombus}. Dari hasil perbandingan segmentasi dari 2 model tersebut, arsitektur VGG16-UNet memiliki kualitas nilai validasi segmentasi yang tinggi dibandingkan dengan arsitektur U-Net standard dengan nilai \textit{mean} IoU sebesar 88,298\%, nilai \textit{mean} \textit{dice coefficient} sebesar 0,8784, dan nilai \textit{mean hausdorff distance} sebesar 3,07.
+%\end{enumerate}
+
+
+\section{Saran}
+\label{sec:sec4_saran}
+\vspace{1ex}
+
+Dalam melakukan penelitian segmentasi gumpalan darah vena pada citra \textit{ultrasound} menggunakan model segmentasi U-Net terdapat hal - hal yang masih perlu dilakukan untuk penelitian selanjutnya. Rencana penelitian selanjutnya yaitu pengembangan fitur estimasi volume metric gumpalan darah sebagai hasil final yang diharapkan pada penelitian ini, yang diharpkan dapat memudahkan tenaga medis untuk melakukan tindakan penyedotan gumpalan darah pada kasus DVT. Di samping itu, peningkatan fitur - fitur lain juga perlu dilakukan, termasuk memperbaiki proses kalibrasi dan meningkatkan optimasi rekonstruksi 3D.

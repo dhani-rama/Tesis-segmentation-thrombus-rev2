@@ -1,0 +1,13 @@
+\babel@toc {indonesian}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Pembagian data citra 3D \textit {ultrasound} pembuluh darah dan \textit {thrombus} \textit {phantom} balon panjang\relax }}{38}{table.caption.26}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Pembagian data citra 2D hasil \textit {slice} citra 3D \textit {ultrasound} pembuluh darah dan \textit {thrombus} \textit {phantom} balon panjang\relax }}{38}{table.caption.27}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Pembagian data citra 2D \textit {ultrasound} \textit {thrombus} pasien penderita DVT.\relax }}{39}{table.caption.28}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Spesifikasi platform Google Colab\relax }}{39}{table.caption.29}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Konfigurasi Hiperparameter Model\relax }}{40}{table.caption.30}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Performa Segmentasi 2D Citra Ultrasound Pembuluh Darah Dan Thrombus Menggunakan Model Segmentasi U-Net Standar dan U-Net dengan Pre-trained VGG16\relax }}{67}{table.caption.58}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Performa Segmentasi 3D Citra Ultrasound Pembuluh Darah Dan Thrombus Menggunakan Model Segmentasi U-Net 3D\relax }}{71}{table.caption.62}%
+\addvspace {10\p@ }
